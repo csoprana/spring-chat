@@ -2,6 +2,8 @@
 Questa demo è stata realizzata usando Spring boot, le websocket e il protocollo STOMP.
 La demo attualmente funziona solo con 2 utenti (cris e james) ma è facilmente estendibile a più utenti.
 
+## Demo in azione
+https://youtu.be/lKW516ItHlU
 
 ## Situazione iniziale
 Ogni client si collega al server dando vita a una connessione persistente e resta in attesa di messaggi indirizzati a lui.
