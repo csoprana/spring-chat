@@ -22,7 +22,7 @@ Una volta che il server ha salvato il messaggio ricevuto da cris lo inoltra  a j
 Una volta che james riceve il messaggio, estrae l'id del messaggio (UUID) e lo invia in un pacchetto ACK al server per informarlo dell'avvenuta ricezione.
 Quando il server riceve l'ACK, estrae l'id e salva nel database l'evento di avvenuta ricezione (booleano).
 
-## Acknowledge client -> server
+## Acknowledge client <- server
 Allo stato attuale, cris viene informato dell'avvenuta ricezione del messaggio inviato a james solamente quando ricarica la pagina.
 L'idea è di creare e inviare un nuovo pacchetto RECEIPT a cris quando il server riceve il pacchetto ACK da james.
 L'ultimo tentativo aveva generato un ciclo con i bean (da risolvere!).
