@@ -67,12 +67,7 @@ public class WebsocketConfig implements WebSocketMessageBrokerConfigurer {
 	public void configureClientInboundChannel(ChannelRegistration registration) {
 		registration.interceptors(new ExecutorChannelInterceptor() {
 
-			@Override
-			public void afterReceiveCompletion(Message<?> message, MessageChannel channel, Exception ex) {
-				// TODO Auto-generated method stub
-				//System.out.println(message);
-
-			}
+		
 
 			@Override
 			public void afterMessageHandled(Message<?> inMessage, MessageChannel inChannel, MessageHandler handler,
