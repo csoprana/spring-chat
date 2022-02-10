@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+    <!--<script src="/webjars/sockjs-client/sockjs.min.js"></script>  -->
+    <!--   <script src="/webjars/stomp-websocket/stomp.min.js"></script> -->
+    <script src="/stomp/stomp.js"></script>
+    <script src="https://kit.fontawesome.com/4149919130.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+
+<!-- 
+<h1 id="sessionId" th:text="${sessionId}"></h1>
+<input type="radio" id="cris" value="cris" name="recipient">
+<label for="cris">cris</label>
+<input type="radio" id="james" value="james" name="recipient">
+<label for="james">james</label>
+<button onclick="connect()">Connettiti</button>
+<button onclick="send()">Invia</button>
+<button onclick="disconnect()">Disconnettiti</button>
+<input id="messagge_body" type="text" placeholder="Scrivi..."/>
+
+
+<div class="chat-container">
+	
+
+
+</div>
+<head>
+  <script src="https://kit.fontawesome.com/4149919130.js" crossorigin="anonymous"></script>
+</head>
+-->
+
+
+<div class="center">
+	<div class="left-column">
+	
+	<h3 th:text="'Utente loggato: ' + ${sessionId}"></h3>
+	<span id="sessionId" style="display: none" th:text="${sessionId}"></span>  
+		<div class="row">
+			<i class="sandwitch fas fa-bars fa-2x"></i>
+			<div class="input">
+				<input type="text"/>
+			</div>
+		</div>
+		<div class="filters">
+			<button>Tutto</button>
+			<button>Amici</button>
+			<button>Gruppi</button>
+		</div>
+		
+		<div class="chat-thumbnail">
+			<img src="https://picsum.photos/id/391/200/300">
+			<div class="chat-thumbnail__content">
+				<div class="chat-thumbnail__header">
+					<div class="recipient-name">James Sunderland</div>
+					<div>10:30</div>
+				</div>
+				<div>
+					
+				</div>
+			</div>
+		</div>
+				
+				
+		
+		
+	</div>
+	
+	
+	<div class="center-right-column">
+		<div class="center-column">
+			<div class="chat__footer">
+				<i class="emoticon-icon fas fa-smile"></i>
+				<input id="input-message" type="text" placeholder="Scrivi..."/>
+				
+				<i class="attach-icon fas fa-paperclip"></i>
+				<i class="microphone-icon fas fa-microphone"></i>
+			</div>
+			<div class="user-bar">
+				<div class="chat-header">
+					<div class="chat-header__left">
+						<img src="https://picsum.photos/id/395/200/300">
+						<div class="chat__username">
+							<div class="recipient-name">James Sunderland</div>
+							<div>Ultimo accesso: 10 marzo 2022</div>
+						</div>
+					</div>
+					
+					<i class="video-icon fas fa-video"></i>
+				</div>
+			</div>
+			
+			<div class="chat__content">
+
+				
+				<!--  
+				<div class="recipient-message-container">
+					<div class="recipient-message">
+						Gravida quis blandit turpis cursus in hac habitasse platea. Accumsan in nisl nisi scelerisque eu ultrices. 
+					</div>
+				</div>
+				
+				
+				
+				<div class="recipient-message-container">
+					<div class="recipient-message">
+						fefefef
+					</div>
+				</div>
+				
+				<div class="sender-message-container">
+					<div class="sender-message">
+					Primo: Gravida quis blandit turpis cursus in hac habitasse platea. Accumsan in nisl nisi scelerisque eu ultrices. 
+				</div>	
+				</div>
+				
+				
+				<div class="recipient-message-container">
+					<div class="recipient-message">
+						Gravida quis blandit turpis cursus in hac habitasse platea. Accumsan in nisl nisi scelerisque eu ultrices. 
+					</div>
+				</div>
+				
+				<div class="recipient-message-container">
+					<div class="recipient-message">
+						Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Viverra aliquet eget sit amet tellus cras adipiscing enim. At urna condimentum mattis pellentesque id.
+					</div>
+				</div>
+				
+							<div class="sender-message-container">
+					<div class="sender-message">
+					Primo: Gravida quis blandit turpis cursus in hac habitasse platea. Accumsan in nisl nisi scelerisque eu ultrices. 
+				</div>	
+				</div>
+				
+							<div class="sender-message-container">
+					<div class="sender-message">
+					Morbi tristique senectus et netus et malesuada fames ac turpis.  
+				</div>	
+				</div>
+			
+				<div class="recipient-message-container">
+					<div class="recipient-message">
+						Ipsum nunc aliquet bibendum enim facilisis. Nunc sed augue lacus viverra vitae congue eu. Pulvinar neque laoreet suspendisse interdum. 
+					</div>
+				</div>
+			
+					<div class="sender-message-container">
+					<div class="sender-message">
+					Morbi tristique senectus et netus et malesuada fames ac turpis.  
+				</div>	
+				</div>
+			
+				
+				
+				<div class="recipient-message-container">
+					<div class="recipient-message">
+						Eu facilisis sed odio morbi quis commodo odio. Imperdiet proin fermentum leo vel.
+					</div>
+				</div>
+			-->
+			
+			
+			
+			
+		</div>
+		
+		
+		
+			
+		
+	</div>
+	<div class="right-column">
+		<div class="close hide"><i class="fas fa-times"></i>
+
+</div>
+	</div>
+	
+	
+</div>
+
+</div>
+<script src="/js/chat.js"></script>
+</body>
+</html>
